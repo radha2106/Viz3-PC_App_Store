@@ -1,0 +1,23 @@
+'Medidas1'[DeviceRevenue] = SUM(DevicesSales[total_price])
+'Medidas1'[DateUpdated] = "Update to: "&CALCULATE(MAX('Calendario'[Fechas]),ALL())
+'Medidas1'[AppRevenue] = SUM(DigitalSales[total_price])
+'Medidas1'[TtRevenue] = [AppRevenue]+[DeviceRevenue]
+'Medidas1'[AppDownload] = SUM(DigitalSales[total_downloads])
+'Medidas1'[Loss Amount] = SUM(DevicesRefunded[total_refunded])
+'Medidas1'[MaxMinPoint] = 
+VAR p2=CALCULATE(MAXX(VALUES(Calendario[Mes]),[TtRevenue]),ALLSELECTED())
+VAR p3=CALCULATE(MINX(VALUES(Calendario[Mes]),[TtRevenue]),ALLSELECTED())
+VAR p4= [TtRevenue]
+RETURN
+SWITCH(TRUE(),
+p2=p4,"#F3F7FB",p3=p4,"#F3F7FB")
+'Medidas1'[5 Stars Apps Rated] = CALCULATE(SUM(AppRated[apps_rated]),AppRated[rated]=5)
+'Medidas1'[Sales Sucess] = 
+VAR p1=[Loss Amount]+[DeviceRevenue]
+RETURN
+DIVIDE([DeviceRevenue],p1)
+'Medidas1'[YAxisMinRevenue] = MINX(ALLSELECTED(Calendario[Nombre del mes]),[TtRevenue])*0.94
+'Medidas1'[YAxisMaxRevenue] = MAXX(ALLSELECTED(Calendario[Nombre del mes]),[TtRevenue])*1.03
+'Medidas1'[AppsperRates] = SUM(AppRated[apps_rated])
+'Medidas1'[ItemPurchased] = SUM(DevicesSales[items_purchased])
+'Medidas1'[ItemsReturned] = sum(DevicesRefunded[items_returned])
