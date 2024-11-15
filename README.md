@@ -1,6 +1,3 @@
-Steps, Files and information about report for a company selling computer and accessories, also company to keep track on apps
-
-
 # Project Tech Store
 This is a proyect about KPI Metrics in a computer retail store. This include results of varioes producs sold by the company where is in-store or online, it also include information
 for various type of revenue' apps. Data info was/is created in excel and using python (since excel get frozen while using many randoms values); then all the info is imported to SQL, all the calculations and aggroupations are done in SQL, after that just connect to PowerBi. Background is made in Figma.
