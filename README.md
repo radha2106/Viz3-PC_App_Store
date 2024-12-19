@@ -39,7 +39,7 @@ Better PBI details here:
 - [Data Modeling](https://github.com/radha2106/Viz3-PC_App_Store/blob/main/DataModel.png)
 
 Full Dashboard is here:
-- [Viz3](https://www.novypro.com/profile_projects/joseventura?Popup=memberProject&Data=1688354818795x204737288470138850)
+- [Viz3](https://app.powerbi.com/view?r=eyJrIjoiMjdiOGQ0MWItNjg0Zi00MzgzLWE2ZDgtNzg1ZWQ5ODc0MGI1IiwidCI6IjQ4MjkzMjgyLTgzMmQtNGQwYi05ZTBmLTVmMmFmYTg5YTFlNCIsImMiOjJ9)
 
 ## Colors Used Reference
 
